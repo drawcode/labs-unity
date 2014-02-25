@@ -7,7 +7,7 @@ using System.Reflection;
 
 using UnityEngine;
 
-using Engine.Utility;
+using Labs.Utility;
 
 public static class GameObjectExtensions {
 
@@ -470,6 +470,10 @@ public static class GameObjectExtensions {
         
     public static void RotateObject(this GameObject go, Vector3 rotateBy) {
         GameObjectHelper.RotateObject(go, rotateBy);    
+    }
+    
+    public static void TrackObject(this GameObject go, GameObject target) {
+        GameObjectHelper.TrackObject(go, target);    
     }
     
     public static Material GetMaterial(this GameObject go, string name) {
